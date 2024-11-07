@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&family=Outfit:wght@100..900&display=swap');
+
+.hero{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 35px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.hero img{
+    margin-top: 150px;
+    height: 300px;
+    width: 300px;
+    border: none;
+    border-radius: 50%;
+}
+
+.hero h1{
+    text-align: center;
+    width: 70%;
+    font-size: 60px;
+    font-weight: 600;
+    font-family: "Outfit", serif;
+}
+
+.hero h1 span{
+    background:#DA7C25;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero-action{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    font-size: 17px;
+    font-weight: 500;
+    margin-bottom: 50px;
+    font-family: "Outfit", serif;
+}
+
+.hero-connect{
+    padding: 10px 30px;
+    border-radius: 30px;
+    background:#DA7C25;
+    color:  #231f20;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.hero-connect:hover{
+    border-radius: 40px;
+    background: #e7dfd8;
+    color: #DA7C25;
+}
+
+.hero-resume{
+    padding: 10px 30px;
+    border-radius: 30px;
+    border: 2px solid #fff;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.hero-resume:hover{
+    border:2px solid #DA7C25;
+}
+
+@media (max-width:768px) {
+    .hero img{
+        margin-top: 120px;
+        width: 250px;
+        height: 250px;
+    }
+    .hero h1{
+        margin-top: 50px;
+        width: 90%;
+        font-size: 50px;
+    }
+    .hero-action{
+        gap: 16px;
+        font-size: 15px;
+        font-weight: 500;
+        margin-bottom: 50px;
+    }
+    .hero-connect{
+        padding: 10px 20px;
+        border-radius: 30px;
+    }
+}

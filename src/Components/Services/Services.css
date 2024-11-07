@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&family=Outfit:wght@100..900&display=swap');
+
+.services{
+    font-family: "Outfit", serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    margin: 80px 150px;
+}
+
+.services-title h1{
+    padding: 0 30px;
+    font-size: 80px;
+    font-weight: 600;
+}
+.services-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 80px;
+}
+
+.services-format{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding: 60px;
+    border-radius: 10px;
+    border: 2px solid rgb(208, 208, 208);
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.services-format:hover{
+    background-color: #4f0208;
+    color: #fff;
+    transform: scale(1.05);
+    transition: 0.4s;
+}
+.services-format h3{
+    font-size: 28px;
+    font-weight: 600;
+    color: #DA7C25;
+}
+
+.services-format h2{
+    font-size: 38px;
+    font-weight: 800;
+    background: #e7dfd8;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.services-format p{
+    font-size: 18px;
+    line-height: 20px;
+    max-width: 400px;
+}
+
+@media(max-width:1250px){
+    .services-format h3{
+        font-size: 24px;
+    }
+    .services-format h2{
+        font-size: 30px;
+    }
+    .services-format p{
+        font-size: 14px;
+    }
+}
+
+@media(max-width:989px){
+    .services-format h3{
+        font-size: 22px;
+    }
+    .services-format h2{
+        font-size: 28px;
+    }
+    .services-format p{
+        font-size: 14px;
+    }
+    .services-container{
+        grid-template-columns: 1fr;
+    }
+}
+@media(max-width:768px){
+    .services{
+        align-items: start;
+        gap: 70px;
+        margin: 20px 70px;
+    }
+    .services-title h1{
+        padding: 0;
+        font-size: 50px;
+    }
+}
+@media (max-width:470px) {
+    .services{
+        margin: 10px 50px;
+    }
+    .services-format{
+        padding: 20px;
+    }
+    
+}

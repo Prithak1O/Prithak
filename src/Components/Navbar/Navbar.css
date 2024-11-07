@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Rubik+Wet+Paint&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&family=Outfit:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    background: #231f20;
+    color: #e7dfd8;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 150px;
+}
+
+.navbar .logo{
+    font-size: 30px;
+    cursor: pointer;
+    font-family: "Changa One", sans-serif;
+    color: #f0f8ff;
+}
+
+.nav-menu{
+    font-family: "Rubik Wet Paint", system-ui;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 60px;
+    font-size: 17px;
+}
+
+.nav-connect{
+    padding: 10px 30px;
+    border-radius: 30px;
+    background:#DA7C25;
+    color:  #231f20;
+    font-size: 20px;
+    cursor: pointer;
+    font-family: "Outfit", serif;
+    transition: 0.3s ease-in-out;
+}
+
+.nav-connect:hover{
+    border-radius: 40px;
+    background:#e7dfd8;
+    color:  #DA7C25;   
+}
+.nav-menu li{
+    cursor: pointer;
+}
+
+.anchor-link{
+    text-decoration: none;
+    color: #e7dfd8;
+}
+.nav-mob-close{
+    display: none;
+}
+.nav-mob-open{
+    display: none;
+}
+
+@media(max-width:1250px){
+    .navbar{
+        margin: 20px 50px;
+    }
+    .nav-connect{
+        display: none;
+    }
+    .nav-mob-open{
+        display: block;
+        position: fixed;
+        right: 30px;
+        cursor: pointer;
+    }
+    .nav-mob-close{
+        display: block;
+        position: relative;
+        top: 30px;
+        left: 290px;
+        width: 30px;
+        cursor: pointer;
+    }
+    .nav-menu{
+        position: fixed;
+        flex-direction: column;
+        align-items: start;
+        top: 0;
+        gap: 30px;
+        background: #4f0208;
+        width: 350px;
+        height: 100%;
+        z-index: 2;
+        transition: right 0.5s;
+        right: -350px;
+    }
+    .nav-menu li{
+        font-size: 30px;
+        padding-left: 100px;
+        flex-direction: row;
+        gap: 20px;
+    }
+}
