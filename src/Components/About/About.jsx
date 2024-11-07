@@ -13,7 +13,7 @@ const About = () => {
         </div>
         <div className="about-right">
           <div className="about-para">
-            <p>I'm Prithak Acharya, a recent arrival to the tech industry. 'm 16 years old. My country's name is Nepal.</p>
+            <p>I'm Prithak Acharya, a recent arrival to the tech industry. I'm 16 years old. My country's name is Nepal.</p>
             <p> I am employed as a graphic designer and web developer. My interests also include visual effects, video editing, and filmmaking.</p>
           </div>
           <div className="about-skills">
